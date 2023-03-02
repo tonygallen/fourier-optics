@@ -61,7 +61,7 @@ class FresnelPropagator(Propagator):
     computed via the Fresnel transfer function given by (Eq. 5-3, :cite:`goodmanIntroductionFourierOptics`)
 
     .. math ::
-         U(x, y, z) = \mathcal{F}^{-1} \left( \mathcal{F} (U(x,y,0) \times \,
+         U(x, y, z) = \mathcal{F}^{-1} \left( \mathcal{F} (U(x,y,0)) \times \,
            e^{j2\pi z / \lambda} \times e^{-j\pi \lambda z (f_x^2 + f_y^2)} \right) \;,
 
     where the :math:`\mathcal{F}` is the Fourier transform, implemented by :func:`np.fft.fftn`.
