@@ -1,5 +1,5 @@
 # fourier-optics
- Template for building Sphinx documentation for the Integrated Imaging Lab at Purdue
+ Template repo for the Integrated Imaging Lab at Purdue
 
 
 Todo:
