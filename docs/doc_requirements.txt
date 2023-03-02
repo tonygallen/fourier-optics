@@ -1,0 +1,7 @@
+-r ../requirements.txt
+sphinx
+sphinxcontrib-napoleon
+sphinxcontrib-bibtex
+sphinx-autodoc-typehints
+sphinx_rtd_theme
+
