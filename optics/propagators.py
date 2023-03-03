@@ -37,11 +37,10 @@ class Propagator:
         self.wavelength = wavelength
         self.z = z
 
-        self.frequencies = np.zeros(input_shape)
-
         # only works with 2D images
         assert len(input_shape) == len(dx) == 2
 
+        # define frequencies
         fx = np.fft.fftfreq(input_shape[0], dx[0])
         fy = np.fft.fftfreq(input_shape[1], dx[1])
         fxy2 = fx[None, :] ** 2 + fy[:, None] ** 2
