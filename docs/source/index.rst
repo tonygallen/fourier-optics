@@ -4,13 +4,14 @@
    contain the root `toctree` directive.
 
 Welcome to fourier-optics's documentation!
-================================
+==========================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    api
+   references
 
 Indices and tables
 ==================
