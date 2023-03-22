@@ -10,14 +10,20 @@ Welcome to fourier-optics's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   api
+   API Reference <_autosummary/optics.rst>
    references
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Examples:
 
    auto_demos/index
+
+.. toctree::
+   :hidden:
+
+   api
 
 Indices and tables
 ==================
