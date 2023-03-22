@@ -1,4 +1,4 @@
-This is my gallery
-==================
+Fourier Optics Demos
+====================
 
-Below is a gallery of examples
+Below is a gallery of examples.
