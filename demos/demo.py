@@ -12,7 +12,7 @@ from typing import Sequence
 
 # %%
 # Build the aperture
-# ---------------
+# ------------------
 # First we define a circle function.
 def circle(shape: Sequence[int], radius: float):
     """Create a circle of a given radius centered in an array of a given shape."""
