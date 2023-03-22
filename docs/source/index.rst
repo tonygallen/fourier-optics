@@ -17,7 +17,7 @@ Welcome to fourier-optics's documentation!
    :maxdepth: 2
    :caption: Examples:
 
-   auto_gallery/index
+   auto_demos/index
 
 Indices and tables
 ==================
