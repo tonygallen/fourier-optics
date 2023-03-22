@@ -37,6 +37,10 @@ diag_idx = np.diag_indices(300)
 aperture[diag_idx[0], diag_idx[1]] = 0
 aperture[np.flip(diag_idx[0]), diag_idx[1]] = 0
 
+plt.imshow(aperture)
+plt.title('Aperture')
+plt.show()
+
 # %%
 # Call the Fresnel Propagator
 # ---------------------------
@@ -50,10 +54,8 @@ fresnel_propagator = FresnelPropagator(
 y = fresnel_propagator(aperture)
 
 # %%
-# Plot the aperture and field at distance :math:`z`
+# Plot the field at distance :math:`z`
 # -------------------------------------------------
-plt.imshow(aperture)
-plt.title('Aperture')
 
 fig, (ax1, ax2) = plt.subplots(1, 2)
 ax1.imshow(abs(y) ** 2)
