@@ -26,6 +26,7 @@ release = '0.1'
 import os
 import sys
 import sphinx_rtd_theme
+from sphinx_gallery.sorting import FileNameSortKey
 sys.path.insert(0, os.path.abspath('..'))
 
 
@@ -39,13 +40,11 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
     "sphinx.ext.autosummary",
-    "sphinx.ext.doctest",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
-    "sphinx.ext.inheritance_diagram",
     "sphinxcontrib.bibtex",
     "sphinx.ext.mathjax",
-    "sphinx.ext.todo",
+    "sphinx_gallery.gen_gallery",
 ]
 
 # Allows to link to external modules
@@ -54,6 +53,26 @@ intersphinx_mapping = {
     'python': ('http://docs.python.org/3', None),
 }
 
+# sphinx-gallery configuration, allows for demo code in documentation
+sphinx_gallery_conf = {
+    # path to your example scripts
+    'examples_dirs': ['../../demos'],
+    # path to where to save gallery generated output
+    'gallery_dirs': ['auto_demos'],
+    # specify that examples should be ordered according to filename
+    'within_subsection_order': FileNameSortKey,
+    # # directory where function granular galleries are stored
+    # 'backreferences_dir': 'gen_modules/backreferences',
+    # Modules for which function level galleries are created.  In
+    # this case sphinx_gallery and numpy in a tuple of strings.
+    'doc_module': ('optics'),
+    # only parse and add files beginning with 'demo', default='plot_'
+    'filename_pattern': '/demo',
+    # Remove download button
+    'download_all_examples': False,
+}
+
+# bibliography file path
 bibtex_bibfiles = ["references.bib"]
 
 autosummary_generate = True

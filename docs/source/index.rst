@@ -13,6 +13,12 @@ Welcome to fourier-optics's documentation!
    api
    references
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples:
+
+   auto_gallery/index
+
 Indices and tables
 ==================
 
