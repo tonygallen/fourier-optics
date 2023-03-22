@@ -1,5 +1,4 @@
-.. dhsr documentation master file, created by
-   sphinx-quickstart on Wed Aug 10 17:42:03 2022.
+.. fourier-optics documentation master file
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -19,6 +18,7 @@ Welcome to fourier-optics's documentation!
    :caption: Examples:
 
    auto_demos/index
+
 
 .. toctree::
    :hidden:

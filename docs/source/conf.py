@@ -119,3 +119,5 @@ napoleon_use_rtype = False
 # html_theme = "faculty-sphinx-theme"
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# see: https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
+html_theme_options = {'includehidden': False,}
