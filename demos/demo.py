@@ -1,9 +1,19 @@
+"""
+fourier-optics demo
+====================
+This demo will compute and display the Fresnel transform of a given aperture.
+"""
+
 import numpy as np
 from matplotlib import pyplot as plt
 from optics.propagators import FresnelPropagator
 from typing import Sequence
 
 
+# %%
+# Circle Function
+# ---------------
+# First we define a circle function.
 def circle(input_shape: Sequence[int], radius: float):
     """Create a circle of a given radius centered in an array of a given shape."""
     for dim in input_shape:
@@ -15,6 +25,8 @@ def circle(input_shape: Sequence[int], radius: float):
 
 
 def main():
+    # %%
+    # Define some parameters.
     input_shape = (300, 300)
     dx = (1e-2, 1e-2)
     z = 1e5
@@ -26,6 +38,9 @@ def main():
     aperture[diag_idx[0], diag_idx[1]] = 0
     aperture[np.flip(diag_idx[0]), diag_idx[1]] = 0
 
+    # %%
+    # Call the Fresnel Propagator
+    # ---------------------------
     fresnel_propagator = FresnelPropagator(
         input_shape=input_shape,
         dx=dx,
@@ -35,6 +50,9 @@ def main():
 
     y = fresnel_propagator(aperture)
 
+    # %%
+    # Plot the aperture and field at distance :math:`z`
+    # ------------------------------------------------
     plt.imshow(aperture)
     plt.title('Aperture')
 
