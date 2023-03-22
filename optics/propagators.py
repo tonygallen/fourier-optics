@@ -16,7 +16,7 @@ class Propagator:
         U(x, y, z) = \mathcal{F}^{-1} \left( \mathcal{F}(U(x,y,0)) \times
         e^{j 2 \pi z / \lambda \sqrt{1 - (\lambda f_x)^2 - (\lambda f_x)^2}} \right) \;,
 
-    where the :math:`\mathcal{F}` is the Fourier transform, implemented by :func:`np.fft.fftn`.
+    where the :math:`\mathcal{F}` is the Fourier transform, implemented by :func:`numpy.fft.fftn`.
     """
     def __init__(
             self,
@@ -63,7 +63,7 @@ class FresnelPropagator(Propagator):
          U(x, y, z) = \mathcal{F}^{-1} \left( \mathcal{F} (U(x,y,0)) \times \,
            e^{j2\pi z / \lambda} \times e^{-j\pi \lambda z (f_x^2 + f_y^2)} \right) \;,
 
-    where the :math:`\mathcal{F}` is the Fourier transform, implemented by :func:`np.fft.fftn`.
+    where the :math:`\mathcal{F}` is the Fourier transform, implemented by :func:`numpy.fft.fftn`.
     """
     def __init__(
             self,
