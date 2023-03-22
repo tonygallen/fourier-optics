@@ -48,6 +48,12 @@ extensions = [
     "sphinx.ext.todo",
 ]
 
+# Allows to link to external modules
+intersphinx_mapping = {
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    'python': ('http://docs.python.org/3', None),
+}
+
 bibtex_bibfiles = ["references.bib"]
 
 autosummary_generate = True
