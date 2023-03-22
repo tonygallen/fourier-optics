@@ -11,7 +11,7 @@ from typing import Sequence
 
 
 # %%
-# Circle Function
+# Build the aperture
 # ---------------
 # First we define a circle function.
 def circle(shape: Sequence[int], radius: float):
@@ -25,7 +25,7 @@ def circle(shape: Sequence[int], radius: float):
 
 
 # %%
-# Define some parameters.
+# Then we define some parameters and build the aperture.
 input_shape = (300, 300)
 dx = (1e-2, 1e-2)
 z = 1e5
