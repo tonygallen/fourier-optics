@@ -3,8 +3,6 @@
 
 Documentation for package is available [here.](<https://www.math.purdue.edu/~allen450/fourier-optics/>)
 
-here: 
-
 Todo:
 - Write ReadMe
 - Write more detailed doc-strings
